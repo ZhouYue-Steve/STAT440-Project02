@@ -3,7 +3,8 @@
 __pycache__/
 *.pyc
 
-# Contest data: copy separately (train.zip is over GitHub's 100 MB file limit)
-data/
+# Contest data: the unzipped images are tracked; the zips only duplicate them
+# (and train.zip is over GitHub's 100 MB file limit)
+data/*.zip
 
 .DS_Store
