@@ -11,3 +11,45 @@ probe_vit_small_patch14_dinov2.lvd142m_224_t0,2,vit_small_patch14_dinov2.lvd142m
 probe_vit_small_patch14_dinov2.lvd142m_224_mean8,2,vit_small_patch14_dinov2.lvd142m,frozen,224,none,d4,logistic (C by inner CV),0.8896,0.018,0.3
 probe_vit_small_patch14_dinov2.lvd142m_336_mean8,2,vit_small_patch14_dinov2.lvd142m,frozen,336,none,d4,logistic (C by inner CV),0.9319,0.0124,0.5
 probe_vit_base_patch14_dinov2.lvd142m_224_mean8,2,vit_base_patch14_dinov2.lvd142m,frozen,224,none,d4,logistic (C by inner CV),0.9225,0.0139,0.4
+probe_vit_small_patch14_dinov2.lvd142m_336_mean8,2,vit_small_patch14_dinov2.lvd142m,frozen,336,none,d4,logistic (C by inner CV),0.9319,0.0125,0.5
+probe_vit_base_patch14_dinov2.lvd142m_224_t0,2,vit_base_patch14_dinov2.lvd142m,frozen,224,none,none,logistic (C by inner CV),0.9001,0.0149,0.5
+probe_vit_small_patch14_dinov2.lvd142m_336_aug8,2,vit_small_patch14_dinov2.lvd142m,frozen,336,d4,d4,logistic (C by inner CV),0.9344,0.0116,0.6
+probe_vit_base_patch14_dinov2.lvd142m_224_aug8,2,vit_base_patch14_dinov2.lvd142m,frozen,224,d4,d4,logistic (C by inner CV),0.9321,0.0153,1.0
+probe_vit_small_patch14_dinov2.lvd142m_336+vit_base_patch14_dinov2.lvd142m_224_mean8,3,vit_small_patch14_dinov2.lvd142m+vit_base_patch14_dinov2.lvd142m,frozen,336/224,none,d4,logistic (C by inner CV),0.9447,0.0115,0.5
+probe_vit_small_patch14_dinov2.lvd142m_336+vit_base_patch14_dinov2.lvd142m_224+convnext_tiny.fb_in22k_ft_in1k_224_mean8,3,vit_small_patch14_dinov2.lvd142m+vit_base_patch14_dinov2.lvd142m+convnext_tiny.fb_in22k_ft_in1k,frozen,336/224/224,none,d4,logistic (C by inner CV),0.9389,0.0123,0.5
+probe_vit_small_patch14_dinov2.lvd142m_336_mean8_svm,3,vit_small_patch14_dinov2.lvd142m,frozen,336,none,d4,RBF SVM (C by inner CV),0.9189,0.0087,0.3
+probe_vit_base_patch14_dinov2.lvd142m_224_mean8_svm,3,vit_base_patch14_dinov2.lvd142m,frozen,224,none,d4,RBF SVM (C by inner CV),0.896,0.0041,0.5
+probe_vit_small_patch14_dinov2.lvd142m_336+vit_base_patch14_dinov2.lvd142m_224_mean8_svm,3,vit_small_patch14_dinov2.lvd142m+vit_base_patch14_dinov2.lvd142m,frozen,336/224,none,d4,RBF SVM (C by inner CV),0.924,0.008,0.8
+probe_vit_small_patch14_dinov2.lvd142m_336_mean8,2,vit_small_patch14_dinov2.lvd142m,frozen,336,none,d4,logistic (C by inner CV),0.9319,0.0125,0.4
+probe_vit_base_patch14_dinov2.lvd142m_224_mean8,2,vit_base_patch14_dinov2.lvd142m,frozen,224,none,d4,logistic (C by inner CV),0.9225,0.0139,0.5
+probe_convnext_tiny.fb_in22k_ft_in1k_384_mean8,2,convnext_tiny.fb_in22k_ft_in1k,frozen,384,none,d4,logistic (C by inner CV),0.8798,0.0238,0.5
+probe_vit_small_patch14_dinov2.lvd142m_448_mean8,2,vit_small_patch14_dinov2.lvd142m,frozen,448,none,d4,logistic (C by inner CV),0.9274,0.0149,0.5
+probe_vit_base_patch14_dinov2.lvd142m_336_mean8,2,vit_base_patch14_dinov2.lvd142m,frozen,336,none,d4,logistic (C by inner CV),0.9502,0.0084,0.4
+probe_vit_base_patch14_dinov2.lvd142m_448_mean8,2,vit_base_patch14_dinov2.lvd142m,frozen,448,none,d4,logistic (C by inner CV),0.9522,0.0108,0.4
+probe_vit_large_patch14_dinov2.lvd142m_224_mean8,2,vit_large_patch14_dinov2.lvd142m,frozen,224,none,d4,logistic (C by inner CV),0.9417,0.0172,0.4
+probe_vit_large_patch14_dinov2.lvd142m_336_mean8,2,vit_large_patch14_dinov2.lvd142m,frozen,336,none,d4,logistic (C by inner CV),0.9578,0.0121,0.5
+ft_vit_small_patch14_dinov2.lvd142m_336,3,vit_small_patch14_dinov2.lvd142m,fine-tuned,336,d4+jitter,d4,"end-to-end (AdamW lr 0.0001, LLRD 0.75, 10 ep)",0.9952,0.0018,10.5
+ft_vit_base_patch14_dinov2.lvd142m_336_lr1e-4,3,vit_base_patch14_dinov2.lvd142m,fine-tuned,336,d4+jitter,d4,"end-to-end (AdamW lr 0.0001, LLRD 0.75, 10 ep) [fold 1 failed to train]",0.9771,0.15,29.5
+ens_top2,3,ensemble of 28 models,,,,,top2 (nested CV),0.9971,0.0017,0.1
+ens_top3,3,ensemble of 28 models,,,,,top3 (nested CV),0.9969,0.0015,0.1
+ens_top4,3,ensemble of 28 models,,,,,top4 (nested CV),0.9954,0.0027,0.1
+ens_top5,3,ensemble of 28 models,,,,,top5 (nested CV),0.9926,0.0041,0.1
+ens_top6,3,ensemble of 28 models,,,,,top6 (nested CV),0.9914,0.0042,0.1
+ens_greedy,3,ensemble of 28 models,,,,,greedy (nested CV),0.9738,0.1494,0.1
+ens_stack,3,ensemble of 28 models,,,,,stack (nested CV),0.9943,0.0013,0.1
+lecture_cnn_d4,2,lecture CNN,,256,d4,none,end-to-end,0.7349,0.0301,18.9
+ft_vit_base_patch14_dinov2.lvd142m_336_lr5e-5,3,vit_base_patch14_dinov2.lvd142m,fine-tuned,336,d4+jitter,d4,"end-to-end (AdamW lr 5e-05, LLRD 0.75, 10 ep)",0.9984,0.0017,30.1
+ens_top2,3,ensemble of 30 models,,,,,top2 (nested CV),0.9962,0.0029,0.0
+ens_top3,3,ensemble of 30 models,,,,,top3 (nested CV),0.998,0.0016,0.0
+ens_top4,3,ensemble of 30 models,,,,,top4 (nested CV),0.9978,0.0012,0.0
+ens_top5,3,ensemble of 30 models,,,,,top5 (nested CV),0.997,0.0017,0.0
+ens_top6,3,ensemble of 30 models,,,,,top6 (nested CV),0.9954,0.0025,0.0
+ens_greedy,3,ensemble of 30 models,,,,,greedy (nested CV),0.9971,0.003,0.0
+ens_stack,3,ensemble of 30 models,,,,,stack (nested CV),0.9975,0.0008,0.0
+ens_top2,3,ensemble of 29 models,,,,,top2 (nested CV),0.9978,0.0018,0.0
+ens_top3,3,ensemble of 29 models,,,,,top3 (nested CV),0.9964,0.0023,0.0
+ens_top4,3,ensemble of 29 models,,,,,top4 (nested CV),0.9948,0.0037,0.0
+ens_top5,3,ensemble of 29 models,,,,,top5 (nested CV),0.9922,0.0051,0.0
+ens_top6,3,ensemble of 29 models,,,,,top6 (nested CV),0.991,0.0056,0.0
+ens_greedy,3,ensemble of 29 models,,,,,greedy (nested CV),0.9984,0.0017,0.0
+ens_stack,3,ensemble of 29 models,,,,,stack (nested CV),0.9984,0.0008,0.0

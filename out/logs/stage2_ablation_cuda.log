@@ -1,0 +1,30 @@
+probe_vit_small_patch14_dinov2.lvd142m_336_mean8: OOF AUC 0.932 (fold SD 0.012); per-fold [0.933, 0.954, 0.933, 0.922, 0.917]; C chosen ['1e-01', '1e-01', '1e-01', '3e-02', '3e-02']; 27s
+probe_vit_base_patch14_dinov2.lvd142m_224_mean8: OOF AUC 0.922 (fold SD 0.014); per-fold [0.93, 0.941, 0.922, 0.922, 0.899]; C chosen ['3e-02', '3e-02', '3e-02', '3e-02', '3e-02']; 30s
+'[WinError 10054] An existing connection was forcibly closed by the remote host' thrown while requesting HEAD https://huggingface.co/timm/convnext_tiny.fb_in22k_ft_in1k/resolve/main/model.safetensors
+Retrying in 1s [Retry 1/5].
+'[WinError 10054] An existing connection was forcibly closed by the remote host' thrown while requesting HEAD https://huggingface.co/timm/convnext_tiny.fb_in22k_ft_in1k/resolve/main/model.safetensors
+Retrying in 2s [Retry 2/5].
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+convnext_tiny.fb_in22k_ft_in1k @ 384: features 768-d, 116s -> out\features\convnext_tiny.fb_in22k_ft_in1k_384.npz
+probe_convnext_tiny.fb_in22k_ft_in1k_384_mean8: OOF AUC 0.880 (fold SD 0.024); per-fold [0.869, 0.902, 0.912, 0.873, 0.846]; C chosen ['3e-02', '3e-02', '3e-02', '3e-02', '3e-02']; 28s
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+vit_small_patch14_dinov2.lvd142m @ 448: features 384-d, 243s -> out\features\vit_small_patch14_dinov2.lvd142m_448.npz
+probe_vit_small_patch14_dinov2.lvd142m_448_mean8: OOF AUC 0.927 (fold SD 0.015); per-fold [0.932, 0.956, 0.926, 0.911, 0.923]; C chosen ['1e-01', '3e-02', '1e-01', '3e-02', '3e-02']; 29s
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+vit_base_patch14_dinov2.lvd142m @ 336: features 768-d, 345s -> out\features\vit_base_patch14_dinov2.lvd142m_336.npz
+probe_vit_base_patch14_dinov2.lvd142m_336_mean8: OOF AUC 0.950 (fold SD 0.008); per-fold [0.953, 0.965, 0.94, 0.949, 0.947]; C chosen ['3e-02', '3e-02', '3e-02', '3e-02', '3e-02']; 27s
+vit_base_patch14_dinov2.lvd142m @ 448: features 768-d, 677s -> out\features\vit_base_patch14_dinov2.lvd142m_448.npz
+probe_vit_base_patch14_dinov2.lvd142m_448_mean8: OOF AUC 0.952 (fold SD 0.011); per-fold [0.959, 0.97, 0.94, 0.948, 0.945]; C chosen ['3e-02', '3e-02', '3e-02', '3e-02', '3e-02']; 26s
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+vit_large_patch14_dinov2.lvd142m @ 224: features 1024-d, 454s -> out\features\vit_large_patch14_dinov2.lvd142m_224.npz
+probe_vit_large_patch14_dinov2.lvd142m_224_mean8: OOF AUC 0.942 (fold SD 0.017); per-fold [0.95, 0.961, 0.947, 0.937, 0.91]; C chosen ['3e-02', '1e-01', '3e-02', '3e-02', '3e-02']; 26s
+vit_large_patch14_dinov2.lvd142m @ 336: features 1024-d, 1090s -> out\features\vit_large_patch14_dinov2.lvd142m_336.npz
+probe_vit_large_patch14_dinov2.lvd142m_336_mean8: OOF AUC 0.958 (fold SD 0.012); per-fold [0.966, 0.979, 0.959, 0.963, 0.942]; C chosen ['3e-02', '1e-01', '3e+00', '3e-02', '3e-02']; 28s
+
+real	60m14.504s
+user	0m1.197s
+sys	0m2.815s

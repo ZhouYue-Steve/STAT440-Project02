@@ -32,8 +32,19 @@ def load_train_labels() -> pd.DataFrame:
 
 
 def list_test_ids() -> list[str]:
-    """Test ids from the filenames in data/test, sorted ascending."""
-    ids = sorted(p.stem for p in TEST_DIR.glob("*.png"))
+    """Test ids from the filenames in data/test, sorted ascending.
+
+    If data/test is absent (e.g. on a machine with only the repo), fall back to
+    the test ids stored in out/features/*.npz by 11_extract_features.py, which
+    were themselves read from data/test.
+    """
+    if TEST_DIR.is_dir():
+        ids = sorted(p.stem for p in TEST_DIR.glob("*.png"))
+    else:
+        feats = sorted((OUT / "features").glob("*.npz"))
+        assert feats, "no data/test and no out/features/*.npz to read test ids from"
+        ids = [str(i) for i in np.load(feats[0])["test_ids"]]
+        assert ids == sorted(ids)
     assert len(ids) == N_TEST, len(ids)
     return ids
 

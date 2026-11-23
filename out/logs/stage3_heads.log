@@ -1,0 +1,8 @@
+probe_vit_base_patch14_dinov2.lvd142m_224_t0: OOF AUC 0.900 (fold SD 0.015); per-fold [0.902, 0.916, 0.91, 0.903, 0.873]; C chosen ['1e-02', '3e-02', '3e-02', '3e-02', '1e-02']; 27s
+probe_vit_small_patch14_dinov2.lvd142m_336_aug8: OOF AUC 0.934 (fold SD 0.012); per-fold [0.928, 0.956, 0.936, 0.929, 0.923]; C chosen ['1e-02', '1e-02', '3e-02', '1e-02', '1e-02']; 36s
+probe_vit_base_patch14_dinov2.lvd142m_224_aug8: OOF AUC 0.932 (fold SD 0.015); per-fold [0.94, 0.951, 0.931, 0.934, 0.904]; C chosen ['1e-02', '1e-02', '1e-02', '1e-02', '1e-02']; 60s
+probe_vit_small_patch14_dinov2.lvd142m_336+vit_base_patch14_dinov2.lvd142m_224_mean8: OOF AUC 0.945 (fold SD 0.011); per-fold [0.948, 0.963, 0.947, 0.943, 0.927]; C chosen ['3e-02', '3e-02', '3e-02', '3e-02', '3e-02']; 29s
+probe_vit_small_patch14_dinov2.lvd142m_336+vit_base_patch14_dinov2.lvd142m_224+convnext_tiny.fb_in22k_ft_in1k_224_mean8: OOF AUC 0.939 (fold SD 0.012); per-fold [0.944, 0.96, 0.946, 0.934, 0.923]; C chosen ['1e-02', '3e-02', '1e-02', '1e-01', '1e-02']; 31s
+probe_vit_small_patch14_dinov2.lvd142m_336_mean8_svm: OOF AUC 0.919 (fold SD 0.009); per-fold [0.914, 0.934, 0.921, 0.914, 0.908]; C chosen ['3e+00', '3e+00', '3e+00', '3e+00', '3e+00']; 21s
+probe_vit_base_patch14_dinov2.lvd142m_224_mean8_svm: OOF AUC 0.896 (fold SD 0.004); per-fold [0.901, 0.895, 0.898, 0.893, 0.889]; C chosen ['3e+00', '1e+01', '3e+00', '1e+01', '1e+01']; 32s
+probe_vit_small_patch14_dinov2.lvd142m_336+vit_base_patch14_dinov2.lvd142m_224_mean8_svm: OOF AUC 0.924 (fold SD 0.008); per-fold [0.928, 0.934, 0.924, 0.921, 0.91]; C chosen ['3e+00', '1e+01', '3e+00', '1e+01', '1e+01']; 45s
