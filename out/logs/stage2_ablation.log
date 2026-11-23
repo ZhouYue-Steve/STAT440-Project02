@@ -1,0 +1,4 @@
+vit_small_patch14_dinov2.lvd142m @ 336: features 384-d, 2080s -> out/features/vit_small_patch14_dinov2.lvd142m_336.npz
+probe_vit_small_patch14_dinov2.lvd142m_336_mean8: OOF AUC 0.932 (fold SD 0.012); per-fold [0.933, 0.953, 0.933, 0.922, 0.917]; C chosen ['1e-01', '1e-01', '1e-01', '3e-02', '3e-02']; 28s
+vit_base_patch14_dinov2.lvd142m @ 224: features 768-d, 2210s -> out/features/vit_base_patch14_dinov2.lvd142m_224.npz
+probe_vit_base_patch14_dinov2.lvd142m_224_mean8: OOF AUC 0.923 (fold SD 0.014); per-fold [0.93, 0.941, 0.922, 0.922, 0.899]; C chosen ['3e-02', '3e-02', '3e-02', '3e-02', '3e-02']; 27s

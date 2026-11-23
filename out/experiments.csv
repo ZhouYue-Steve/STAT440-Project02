@@ -1,0 +1,13 @@
+name,stage,model,features,res,aug,tta,classifier,oof_auc,fold_sd,minutes
+probe_resnet50.a1_in1k_224_t0,2,resnet50.a1_in1k,frozen,224,none,none,logistic (C by inner CV),0.7989,0.0094,0.9
+probe_resnet50.a1_in1k_224_mean8,2,resnet50.a1_in1k,frozen,224,none,d4,logistic (C by inner CV),0.8696,0.0109,2.2
+probe_resnet50.a1_in1k_224_aug8,2,resnet50.a1_in1k,frozen,224,d4,d4,logistic (C by inner CV),0.8755,0.014,11.3
+lecture_cnn_none,2,lecture CNN,,256,none,none,end-to-end,0.6162,0.0564,33.2
+probe_efficientnet_b0.ra_in1k_224_t0,2,efficientnet_b0.ra_in1k,frozen,224,none,none,logistic (C by inner CV),0.8214,0.0221,0.4
+probe_efficientnet_b0.ra_in1k_224_mean8,2,efficientnet_b0.ra_in1k,frozen,224,none,d4,logistic (C by inner CV),0.8501,0.0191,0.5
+probe_convnext_tiny.fb_in22k_ft_in1k_224_t0,2,convnext_tiny.fb_in22k_ft_in1k,frozen,224,none,none,logistic (C by inner CV),0.8478,0.0254,0.4
+probe_convnext_tiny.fb_in22k_ft_in1k_224_mean8,2,convnext_tiny.fb_in22k_ft_in1k,frozen,224,none,d4,logistic (C by inner CV),0.8747,0.0173,0.5
+probe_vit_small_patch14_dinov2.lvd142m_224_t0,2,vit_small_patch14_dinov2.lvd142m,frozen,224,none,none,logistic (C by inner CV),0.8562,0.0175,0.4
+probe_vit_small_patch14_dinov2.lvd142m_224_mean8,2,vit_small_patch14_dinov2.lvd142m,frozen,224,none,d4,logistic (C by inner CV),0.8896,0.018,0.3
+probe_vit_small_patch14_dinov2.lvd142m_336_mean8,2,vit_small_patch14_dinov2.lvd142m,frozen,336,none,d4,logistic (C by inner CV),0.9319,0.0124,0.5
+probe_vit_base_patch14_dinov2.lvd142m_224_mean8,2,vit_base_patch14_dinov2.lvd142m,frozen,224,none,d4,logistic (C by inner CV),0.9225,0.0139,0.4
